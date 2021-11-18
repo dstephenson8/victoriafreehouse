@@ -101,13 +101,11 @@ img{
 footer{
     border-top: 1px solid grey;
     display: grid;
-    grid-template-areas:
+
     
     
     
     
-    
-    align-items: flex-start;
 
 }
 
