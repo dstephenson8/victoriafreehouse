@@ -2,6 +2,7 @@ html{
     font-size: 16px;
     letter-spacing: .2em;
     background-color: #fdfbf9;
+    height: 100%;
 
 }
 body{
@@ -10,6 +11,7 @@ body{
     padding: 0;
     /* font-family: 'IM Fell English SC', serif; */
     font-family: 'Roboto', sans-serif;
+    height: 100%;
 }
 
 h3{
@@ -40,6 +42,10 @@ a{
   .topnav #myLinks {
     display: none;
   }
+
+.nav-links{
+    text-align: right;
+}
 
 
   .topnav a {
@@ -72,6 +78,19 @@ a{
 
 
 
+.imageGallery{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 1px;
+    row-gap: 1px;
+
+}
+.imageGalleryImg{
+    object-fit: cover;
+    width: 200px;
+height: 200px;
+    margin: 0;
+}
 /* Index.html CSS */
 
 .homeIntro{
@@ -217,8 +236,6 @@ iframe{
     height: 10%;
     width: 100%;
    
-
-
 } */
 .responsive-iframe-container {
     position: relative;
@@ -253,10 +270,12 @@ iframe{
 /* Footer */
 
 footer{
-    margin-top: 10px;
+    margin-top: 1em;
     border-top: 1px solid grey;
     display: grid;
     padding: 0 .5em;
+    font-size: .75rem;
+   
 
 }
 
@@ -269,9 +288,19 @@ footer li{
     border-top: none;
 }
 
+.col2{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+}
+.contact{
+    text-align: right;
+}
+
 .col2 p{
     margin-bottom: 0.25rem;
-    padding: 1rem 0 0 0;
     color: grey;
     
 }
@@ -283,6 +312,9 @@ footer li{
 }
 
 .col3{
+   
+    padding: 1em;
+    font-size: 1rem;
     display: flex;
     justify-content: space-around;
     margin-bottom: 1em;
@@ -300,7 +332,6 @@ footer li{
      
      
  }
-
  */
 
 
@@ -319,6 +350,3 @@ footer li{
     font-size: 1.25em;
 
 }
-
-
-
