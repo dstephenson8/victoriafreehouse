@@ -19,10 +19,23 @@ h3{
     font-size: 1.5em;
 }
 
-img{
+#selected{
+   text-decoration: underline;
+  
+}
+
+.imageGalleryImg{
     max-width: 100%;
     height: auto;
+       transition: 
+        transform 750ms cubic-bezier(.5, 0, .5, 1),
+        opacity 250ms linear;
 }
+.imageGalleryImg:hover{
+    transform: scale(1.1);
+ 
+}
+
 .logo{
     height: 90px;
 }
@@ -81,15 +94,18 @@ a{
 .imageGallery{
     display: grid;
     grid-template-columns: 50% 50%;
-    column-gap: 1px;
-    row-gap: 1px;
+    column-gap: 5px;
+    row-gap: 5px;
+    margin: 0 auto;
+    max-width: fit-content;
+ 
 
 }
 .imageGalleryImg{
     object-fit: cover;
     width: 200px;
-height: 200px;
-    margin: 0;
+    height: 200px;
+    align-items: center;
 }
 /* Index.html CSS */
 
@@ -97,12 +113,17 @@ height: 200px;
     font-family: 'Roboto', sans-serif;
     position: relative;
     margin-bottom: 1em;
+    max-width: 950px;
+    margin: 0 auto;
+
 
 }
 
 .mainImg{
     max-width: 100%;
     filter: brightness(50%);
+    margin: 0 auto;
+    display: block;
     
 }
 
@@ -156,11 +177,52 @@ height: 200px;
     .menuContainer{
         flex-direction: row;
         justify-content: space-around;
+        max-width: 70%;
+        margin: 0 auto;
        
+    }
+    .mainSection{
+       text-align: center;
+       margin: 0 auto;
+
+    }
+    .imageGallery{
+      
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        column-gap: 10px;
+        row-gap: 10px; 
+     
+    }
+    .imageGalleryImg{
+        margin: 0;
+        object-fit: cover;
+        width: 250px;
+        height: 250px;
+        margin: 0;
     }
      
      
  }
+
+/* Catering page CSS */
+
+.cateringMain{
+    margin: 1em;
+}
+
+@media (min-width: 768px) {
+  .cateringMain{
+   
+      width: 80%;
+      margin: 0 auto;
+  }
+
+}
+
+/* End Catering Page */
+
+
 
 
 .mainSection{
@@ -231,12 +293,7 @@ height: 200px;
 }
 
 
-/* 
-iframe{
-    height: 10%;
-    width: 100%;
-   
-} */
+
 .responsive-iframe-container {
     position: relative;
     /* padding-bottom: 56.25%; */
@@ -321,19 +378,6 @@ footer li{
     
     
 }
-/* 
-@media (min-width: 768px) {
-    .col3{
-        flex-direction: row;
-        justify-content: space-around;
-        font-size: 10rem;
-       
-    }
-     
-     
- }
- */
-
 
 
 /* End Footer */
