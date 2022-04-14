@@ -59,6 +59,10 @@ a{
 .nav-links{
     text-align: right;
 }
+.nav-links:hover,
+.nav-links:focus{
+    font-size: larger;
+}
 
 
   .topnav a {
@@ -160,9 +164,15 @@ a{
 }
 
 .mainPageMenu:hover,
-.mainPageMenu:focus{
-    padding: .5em 1.25em;
+.mainPageMenu:focus,
+.subMenuItem:hover,
+.subMenuItem:focus,
+{
+    transform:scale(1.3,1.3);
+    -webkit-transform:scale(1.3,1.3);
+    -moz-transform:scale(1.3,1.3);
 }
+
 
 .menuContainer{
     margin-bottom: 4em;
