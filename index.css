@@ -18,6 +18,11 @@ h3{
    
     font-size: 1.5em;
 }
+.logo-link{
+    text-decoration: none;
+    width: 50px;
+    
+}
 
 #selected{
    text-decoration: underline;
