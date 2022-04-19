@@ -65,7 +65,9 @@ a{
     text-align: right;
 }
 .nav-links:hover,
-.nav-links:focus{
+.nav-links:focus,
+.crownDiningLinks:hover,
+.crownDiningLinks:focus{
     font-size: larger;
 }
 
