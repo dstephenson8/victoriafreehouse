@@ -278,10 +278,9 @@ a{
     flex-direction: row;
     justify-content: space-around;
     margin-top: 5rem;
-  
-   
-   
+     
 }
+
 
 .subMenuItem{
     border: 1px solid black;
