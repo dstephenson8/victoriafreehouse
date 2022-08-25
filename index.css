@@ -65,9 +65,13 @@ a{
     text-align: right;
 }
 .nav-links:hover,
-.nav-links:focus,
+.nav-links:focus,s
 .crownDiningLinks:hover,
-.crownDiningLinks:focus{
+.crownDiningLinks:focus,
+.far:hover,
+.far:focus,
+.fab:hover,
+.fab:focus{
     font-size: larger;
 }
 
@@ -202,7 +206,7 @@ a{
        text-align: center;
        margin: 0 auto;
 
-    }+
+    }
     .imageGallery{
       
         display: grid;
@@ -306,6 +310,9 @@ a{
     display: flex;
     flex-direction: column;
 
+}
+.soccorAnnoucement{
+    margin-left: 1rem;
 }
 
 
